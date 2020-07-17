@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PhotosSlideshowController">
+   <children>
+      <Button fx:id="slideLeft" layoutX="330.0" layoutY="268.0" mnemonicParsing="false" onAction="#slideLeftPressed" prefHeight="39.0" prefWidth="42.0" text="&lt;" />
+      <Button fx:id="slideRight" layoutX="712.0" layoutY="268.0" mnemonicParsing="false" onAction="#slideRightPressed" prefHeight="39.0" prefWidth="48.0" text="&gt;" />
+      <Label layoutX="238.0" layoutY="8.0" text="Photos Slideshow">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="caption" layoutX="207.0" layoutY="164.0" prefHeight="27.0" prefWidth="170.0" text="Caption: " />
+      <Label fx:id="date" layoutX="207.0" layoutY="191.0" prefHeight="27.0" prefWidth="170.0" text="Date:" />
+      <Label fx:id="tagname" layoutX="207.0" layoutY="218.0" prefHeight="27.0" prefWidth="181.0" text="Selected Tag's Name:" />
+      <Label fx:id="tagvalue" layoutX="207.0" layoutY="245.0" prefHeight="27.0" prefWidth="191.0" text="Selected Tag's Value:" />
+      <Button fx:id="addtag" layoutX="140.0" layoutY="504.0" mnemonicParsing="false" onAction="#addTagPressed" text="Add Tag" />
+      <Button fx:id="deletetag" layoutX="16.0" layoutY="504.0" mnemonicParsing="false" onAction="#deleteTagPressed" text="Delete Tag" />
+      <Button fx:id="logout" layoutX="695.0" layoutY="16.0" mnemonicParsing="false" onAction="#logoutPressed" text="Logout" />
+      <Button fx:id="back" layoutX="15.0" layoutY="69.0" mnemonicParsing="false" onAction="#backPressed" text="&lt; Back" />
+      <Text layoutX="17.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Tag Name to Display Value:" wrappingWidth="251.0" />
+      <Button fx:id="quit" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#quitPressed" text="Quit" />
+      <ImageView fx:id="imageview" fitHeight="318.0" fitWidth="306.0" layoutX="389.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true" />
+      <ListView fx:id="tagListView" layoutX="14.0" layoutY="322.0" onMouseClicked="#userSelection" prefHeight="160.0" prefWidth="236.0" />
+      <Label layoutX="126.0" layoutY="164.0" text="Caption:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="191.0" text="Date:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="218.0" text="Selected Tag's Name:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="245.0" text="Selected Tag's Name:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

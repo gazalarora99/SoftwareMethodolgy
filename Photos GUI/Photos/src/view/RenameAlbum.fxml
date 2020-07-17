@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="222.0" prefWidth="385.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.RenameAlbumController">
+   <children>
+      <Label layoutX="127.0" layoutY="12.0" text="Rename Album">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="71.0" text="Old Name" />
+      <Label layoutX="83.0" layoutY="126.0" text="New Name" />
+      <Label fx:id="oldalbumname" layoutX="199.0" layoutY="71.0" text="&quot;Example&quot;" />
+      <TextField fx:id="newalbumname" layoutX="193.0" layoutY="120.0" prefHeight="27.0" prefWidth="129.0" />
+      <Button fx:id="cancel" layoutX="18.0" layoutY="169.0" mnemonicParsing="false" onAction="#cancelPressed" text="Cancel" />
+      <Button fx:id="ok" layoutX="322.0" layoutY="169.0" mnemonicParsing="false" onAction="#okPressed" text="OK" />
+      <Button fx:id="quit" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#quitPressed" text="Quit" />
+   </children>
+</AnchorPane>

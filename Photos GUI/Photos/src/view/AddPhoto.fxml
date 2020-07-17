@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AddPhotoToAlbumController">
+   <children>
+      <Label layoutX="187.0" layoutY="25.0" text="Add Photo to Album">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="browse" layoutX="115.0" layoutY="88.0" mnemonicParsing="false" onAction="#browsePressed" text="Browse" />
+      <TextField fx:id="browsefield" layoutX="188.0" layoutY="84.0" prefHeight="35.0" prefWidth="283.0" />
+      <TextField fx:id="captionfield" layoutX="188.0" layoutY="129.0" prefHeight="35.0" prefWidth="180.0" />
+      <Label layoutX="101.0" layoutY="140.0" prefHeight="17.0" prefWidth="92.0" text="Add Caption:" />
+      <Button fx:id="ok" layoutX="446.0" layoutY="452.0" mnemonicParsing="false" onAction="#okPressed" prefHeight="23.0" prefWidth="67.0" text="Confirm" />
+      <Button fx:id="cancel" layoutX="538.0" layoutY="452.0" mnemonicParsing="false" onAction="#cancelPressed" prefHeight="27.0" prefWidth="61.0" text="Cancel" />
+      <Button fx:id="quit" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#quitPressed" text="Quit" />
+      <Button fx:id="logout" layoutX="538.0" layoutY="15.0" mnemonicParsing="false" onAction="#logoutPressed" text="Logout" />
+      <TextField fx:id="newname" layoutX="361.0" layoutY="242.0" prefHeight="29.0" prefWidth="198.0" />
+      <TextField fx:id="exisitingvalue" layoutX="18.0" layoutY="416.0" prefHeight="27.0" prefWidth="208.0" />
+      <TextField fx:id="newvalue" layoutX="362.0" layoutY="304.0" prefHeight="29.0" prefWidth="198.0" />
+      <Label layoutX="361.0" layoutY="225.0" text="New Tag's Name:" />
+      <Label layoutX="362.0" layoutY="287.0" text="New Tag's Value:" />
+      <Label layoutX="18.0" layoutY="399.0" text="Existing Tag's Value:" />
+      <ListView fx:id="tagView" layoutX="18.0" layoutY="232.0" prefHeight="145.0" prefWidth="208.0" />
+      <Label layoutX="18.0" layoutY="217.0" text="Choose from Existing Tag Names:" />
+      <Label layoutX="247.0" layoutY="181.0" text="Add a Tag:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="275.0" layoutY="276.0" text="OR">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

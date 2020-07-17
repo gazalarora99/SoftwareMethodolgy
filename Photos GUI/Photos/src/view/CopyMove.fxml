@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CopyOrMoveController">
+   <children>
+      <Button fx:id="logout" layoutX="488.0" layoutY="12.0" mnemonicParsing="false" onAction="#logoutPressed" text="Logout" />
+      <Button fx:id="quit" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#quitPressed" text="Quit" />
+      <RadioButton fx:id="Copy" layoutX="319.0" layoutY="83.0" mnemonicParsing="false" text="Copy">
+         <toggleGroup>
+            <ToggleGroup fx:id="group1" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="Move" layoutX="320.0" layoutY="121.0" mnemonicParsing="false" text="Move" toggleGroup="$group1" />
+      <Button fx:id="ok" layoutX="517.0" layoutY="253.0" mnemonicParsing="false" onAction="#okPressed" text="OK" />
+      <Button fx:id="cancel" layoutX="14.0" layoutY="253.0" mnemonicParsing="false" onAction="#cancelPressed" text="Cancel" />
+      <Label fx:id="currphoto" layoutX="116.0" layoutY="18.0" text="What would you like to do with this photo?" />
+      <ListView fx:id="albumListView" layoutX="187.0" layoutY="173.0" prefHeight="117.0" prefWidth="210.0" />
+      <ImageView fx:id="iv" fitHeight="117.0" fitWidth="123.0" layoutX="187.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="91.0" layoutY="173.0" text="To Album:" />
+   </children>
+</AnchorPane>
